@@ -1,0 +1,19 @@
+{
+  "Group": "com.example",
+  "Name": "ExamplePlugin",
+  "Version": "1.0.0",
+  "Description": "Your plugin description here.",
+  "Authors": [
+    {
+      "Name": "Your Name",
+      "Email": "your.email@example.com",
+      "Url": "https://example.com"
+    }
+  ],
+  "Website": "https://example.com",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "com.example.plugin.ExamplePlugin"
+}
