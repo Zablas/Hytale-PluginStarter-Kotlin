@@ -9,7 +9,6 @@ import com.hypixel.hytale.server.core.event.events.player.PlayerChatEvent
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent
 import com.hypixel.hytale.server.core.plugin.JavaPlugin
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit
-import java.util.function.Consumer
 import javax.annotation.Nonnull
 
 class ExamplePlugin(@Nonnull init: JavaPluginInit) : JavaPlugin(init) {
