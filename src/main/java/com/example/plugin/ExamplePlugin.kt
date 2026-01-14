@@ -21,10 +21,10 @@ class ExamplePlugin(@Nonnull init: JavaPluginInit) : JavaPlugin(init) {
 
         // Events
         eventRegistry.registerGlobal<String?, PlayerChatEvent?>(
-            PlayerChatEvent::class.java,
-            Consumer { event: PlayerChatEvent? -> PlayerChatListener.onPlayerChat(event!!) })
+            PlayerChatEvent::class.java
+        ) { event: PlayerChatEvent? -> PlayerChatListener.onPlayerChat(event!!) }
         eventRegistry.registerGlobal<String?, PlayerReadyEvent?>(
-            PlayerReadyEvent::class.java,
-            Consumer { event: PlayerReadyEvent? -> PlayerReadyListener.onPlayerReady(event!!) })
+            PlayerReadyEvent::class.java
+        ) { event: PlayerReadyEvent? -> PlayerReadyListener.onPlayerReady(event!!) }
     }
 }
