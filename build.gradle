@@ -40,7 +40,11 @@ jar {
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
-    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    from {
+        configurations.compileClasspath.collect {
+            if (!it.name.endsWith("HytaleServer.jar")) it.isDirectory() ? it : zipTree(it)
+        }
+    }
 }
 
 test {
